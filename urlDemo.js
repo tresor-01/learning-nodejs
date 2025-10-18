@@ -22,6 +22,9 @@ console.log(url.fileURLToPath(import.meta.url))
 //
 
 const params = new URLSearchParams(urlObj.search);
-console.log(params)
-console.log(params.get('q'))
+console.log(params);
+params.append('limit','5');
+params.delete('limit'),
+console.log(params.get('q'));
+
 
